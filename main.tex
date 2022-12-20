@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Hello YouTube}
+\author{Sebastian Damian Romero Chavero}
+\date{December 2022}
+
+\begin{document}
+
+\maketitle
+
+% We can also put a star between section and the curly brackets to remove the numbering
+\section{Definitions of $e$}
+Let's begin with a formula $e^{i\pi}+1=0$. but we cam also do 
+
+% We could also have used enumerate to have numbers instead of dots
+\begin{enumerate}
+    \item As a \textbf{limit}
+    $$ e=\lim_{n\to\infty} \left(1+\frac{1}{n}\right)^n = 
+    \lim_{n\to\infty}\frac{n}{\sqrt[n]{n!}}$$
+
+
+    \item As a \textit{sum}:
+
+    $$ e=\sum_{n=0}^{\infty} \frac{1}{n!} $$
+    
+    \item As a \underline{continued fraction}:
+
+    $$e=2\frac{1}{1+\frac{1}{2+\frac{2}{3+\frac{3}{4+\frac{4}{5+\ddots}}}}}$$
+
+\end{enumerate}
+
+\section{More formulas}
+
+$$\int_a^bf(x)dx$$
+$$\iiint f(x,y,z)dxdydz$$
+$$\vec{v}=<v_1, v_2, v_3>$$
+
+$$vec{v}\cdot \Vec{w}$$
+
+$$\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+\end{bmatrix}
+$$
+
+\section{Graphics}
+\includegraphics[scale=0.30]{rwu_logo_hor-lila-cyan_rgb_0-2950056503.png}
+
+\section{More on mathematics}
+\begin{equation}
+\label{limit}
+e= \lim_{n\to\infty} \left(1+\frac{1}{n}\right)^n 
+=\lim_{t\to 0}(1+t)^{\frac{1}{t}}
+\end{equation}
+
+Equation \ref{limit} was really cool!
+\\2 and 3 are using align but are not group together
+\begin{align}
+e&= \lim_{n\to\infty} \left(1+\frac{1}{n}\right)^n\\
+\text{Like and subscribe}&=\lim_{t\to 0}(1+t)^{\frac{1}{t}}
+\end{align}
+\\Using equation and then a split inside of it, we can group them together so it is easier to label them
+\begin{equation}
+\label{limit2}
+\begin{split}
+e&= \lim_{n\to\infty} \left(1+\frac{1}{n}\right)^n\\
+\text{Like and subscribe}&=\lim_{t\to 0}(1+t)^{\frac{1}{t}}
+\end{split}
+\end{equation}
+
+Equation \ref{limit2} is even cooler!
+
+
+
+\end{document}
